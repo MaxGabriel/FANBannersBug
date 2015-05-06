@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+@import FBAudienceNetwork;
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    FBAdView *adView = [[FBAdView alloc] initWithPlacementID:@"PLACEMENT_ID"
+                                                      adSize:kFBAdSizeHeight50Banner
+                                          rootViewController:self];
+//    adView.frame = CGRectMake(0, 0, 320, 50); // Uncommenting this code causes the banner to load, but the auto-expanding banner no longer works.
+    [adView loadAd];
+    [self.view addSubview:adView];
 }
 
 - (void)didReceiveMemoryWarning {

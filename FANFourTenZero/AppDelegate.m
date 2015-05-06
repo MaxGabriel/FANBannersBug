@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+@import FBAudienceNetwork;
+@import AdSupport;
+@import CoreMotion;
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +20,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [FBAdSettings setLogLevel:FBAdLogLevelVerbose];
+//     Override point for customization after application launch.
     return YES;
 }
 

@@ -14,6 +14,7 @@
 		50D298BD1AFA9AE7002FACD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D298BC1AFA9AE7002FACD5 /* Images.xcassets */; };
 		50D298C01AFA9AE7002FACD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D298BE1AFA9AE7002FACD5 /* LaunchScreen.xib */; };
 		50D298CC1AFA9AE7002FACD5 /* FANFourTenZeroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D298CB1AFA9AE7002FACD5 /* FANFourTenZeroTests.m */; };
+		50D298DA1AFAB107002FACD5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D298D91AFAB107002FACD5 /* FBAudienceNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		50D298C51AFA9AE7002FACD5 /* FANFourTenZeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FANFourTenZeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D298CA1AFA9AE7002FACD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D298CB1AFA9AE7002FACD5 /* FANFourTenZeroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FANFourTenZeroTests.m; sourceTree = "<group>"; };
+		50D298D91AFAB107002FACD5 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D298DA1AFAB107002FACD5 /* FBAudienceNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		50D298A31AFA9AE7002FACD5 = {
 			isa = PBXGroup;
 			children = (
+				50D298D91AFAB107002FACD5 /* FBAudienceNetwork.framework */,
 				50D298AE1AFA9AE7002FACD5 /* FANFourTenZero */,
 				50D298C81AFA9AE7002FACD5 /* FANFourTenZeroTests */,
 				50D298AD1AFA9AE7002FACD5 /* Products */,
@@ -347,6 +351,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FANFourTenZero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FANFourTenZero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +428,7 @@
 				50D298D11AFA9AE7002FACD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50D298D21AFA9AE7002FACD5 /* Build configuration list for PBXNativeTarget "FANFourTenZeroTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				50D298D41AFA9AE7002FACD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
